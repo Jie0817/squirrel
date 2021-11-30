@@ -2,7 +2,7 @@
 
 # 确保脚本抛出遇到的错误
 set -e
-now=$(date "+%Y-%m-%d")
+now=$(date "+%Y-%m-%d%H:%M")
 
 # echo "正在打包..."
 # npm run build
