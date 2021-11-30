@@ -92,20 +92,6 @@ module.exports = {
           }
         }
     ]
-      // {
-      //    "meting" : {
-      //     // "server" : 'tencent',
-      //     // "type" : "playlist",
-      //     // "mid": "6838211960"
-      //     "auto": 'https://music.163.com/#/playlist?id=6838211960'
-      //    },
-      //    "aplayer" : {
-      //      "lrcType": 3,
-      //      "fixed" : true,
-      //      "autoplay" : true,  
-      //      "mini" : true
-      //    },
-      // },
   ],
   "theme": "reco",
   "locales": {
