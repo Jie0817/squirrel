@@ -10,10 +10,12 @@ tagline: The journey is dusty. After all, the gods do not cross the suffering of
 #   margin: '9rem auto 2rem',
 #   background: '#fff',
 #   borderRadius: '1rem',
+#   color: '#ffffff',
+#   box-shadow: '1px 1px 10px #dddddd'
 # }
 bgImage : /home-bg.jpg
 # bgImageStyle: {
-#   height: '450px'
+#   color: '#ffffff'
 # }
 # isShowTitleInHome: false
 # actionText: Guide
@@ -26,12 +28,3 @@ bgImage : /home-bg.jpg
 # - title: Tomorrow
 #   details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
 ---
-
-
-<Meting server="netease"
-        type="playlist"
-        mid="6838211960"
-        :mini="true"
-        :fixed="true"
-        :autoplay="true"
-        :lrc-type="3"/>

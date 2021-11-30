@@ -25,8 +25,14 @@
         </ModuleTransition>
       </div>
     </div>
-
+    <div class="home-boxx-container">
+      <div class="home-boxx-container-content">
+        <Boxx :blockStyle="blockStyle" />
+      </div>
+      
+    </div>
     <ModuleTransition delay="0.16">
+        
       <div v-show="recoShowModule" class="home-blog-wrapper">
         <div class="blog-list">
           <!-- 博客列表 -->
@@ -77,6 +83,9 @@ export default defineComponent({
       heroHeight: 0
     })
 
+    // boxx样式
+    const blockStyle = {background:'var(--background-color)',borderColor: '#2e0056',boxShadow:'var(--box-shadow)'}
+
     const recoShowModule = computed(() => instance && instance.$parent.recoShowModule)
 
     const heroImageStyle = computed(() => instance.$frontmatter.heroImageStyle || {})
@@ -101,7 +110,7 @@ export default defineComponent({
       state.recoShow = true
     })
 
-    return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
+    return {blockStyle, recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
   },
   methods: {
     paginationChange (page) {
@@ -117,6 +126,19 @@ export default defineComponent({
 </script>
 
 <style lang="stylus">
+.home-boxx-container{
+    box-sizing: border-box;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    // box-shadow: 
+}
+.home-boxx-container-content{
+  // width: 100%;
+  padding: 10px 20px 0;
+  width: 1200px;
+  box-sizing: border-box;
+}
 .home-blog {
   padding: 0;
   margin: 0px auto;
@@ -138,12 +160,16 @@ export default defineComponent({
       display: block;
       margin:0 auto 1.8rem;
       font-size: 2.5rem;
+      color: var(--background-color);
+      text-shadow : var(--text-color) 0px 0px 10px;
     }
 
     .description {
       margin: 1.8rem auto;
       font-size: 1.6rem;
       line-height: 1.3;
+      color: var(--background-color);
+      text-shadow: var(--text-color) 0px 0px 10px;
     }
   }
   .home-blog-wrapper {
