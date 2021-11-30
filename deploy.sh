@@ -14,9 +14,10 @@ echo "正在上传博客源代码..."
 git init
 git add -A
 git commit -m "squirrel博客源代码$now"
-git remote add origin git@github.com:Jie0817/squirrel.git
-git branch -M main
-git push -f origin main
+git push -f git@github.com:Jie0817/squirrel.git main
+# git remote add origin git@github.com:Jie0817/squirrel.git
+# git branch -M main
+# git push -f origin main
 echo "源代码上传完成"
 
 # echo "正在进入public目录..."
@@ -26,6 +27,7 @@ echo "源代码上传完成"
 # git init
 # git add -A
 # git commit -m "squirrel博客$now"
+# git push -f git@github.com:Jie0817/squirrel.git main:gh-pages
 # git remote add origin git@github.com:Jie0817/squirrel.git
 # git branch -M main
 # git push -f origin main:gh-pages
