@@ -128,17 +128,22 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       "lang": 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-      "title": '怂叔',
+      "title": '树洞',
       "description": '个人博客技术分享'
     }
   },
   "themeConfig": {
-    "vssueConfig": {
-      platform: 'github',
-      owner: 'Jie0817',
-      repo: 'squirrel',
-      clientId: '61ea19f0448c6b9e7e62',
-      clientSecret: 'f21a768b0b89759466917b7eb0698a7c4eee1b4e',
+    // "vssueConfig": {
+    //   "platform": 'github',
+    //   "owner": 'Jie0817',
+    //   "repo": 'squirrel',
+    //   "clientId": '61ea19f0448c6b9e7e62',
+    //   "clientSecret": 'f21a768b0b89759466917b7eb0698a7c4eee1b4e',
+    // },
+    valineConfig: {
+      appId: 'H9OzX3igbsKkgbDSrnuO4dna-gzGzoHsz',// your appId
+      appKey: 'Do5411oluyBQRnqa7QHtBdOP', // your appKey
+      placeholder : '输入你想发表的评论'
     },
     "nav": [
       {
