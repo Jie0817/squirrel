@@ -183,7 +183,7 @@ module.exports = {
         // "link": "https://www.recoluan.com"
       },
     ],
-    "logo": "/headportrait.jpg",
+    "logo": "/logo.jpg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
