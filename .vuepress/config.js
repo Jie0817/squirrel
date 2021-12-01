@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "怂叔个人博客 树洞",
+  "title": "树洞 怂叔个人博客 ",
   "description": "用迷离的舞步，跟随着最后一丝月光的脚步",
   "dest": "public",
   "base" : "/squirrel/",
